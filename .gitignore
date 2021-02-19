@@ -1,0 +1,7 @@
+﻿################################################################################
+# Este archivo .gitignore ha sido creado automáticamente por Microsoft(R) Visual Studio.
+################################################################################
+
+/RouletteAPI/bin/Debug
+/RouletteAPI/obj
+RouletteAPI/.vs/RouletteAPI/v16/.suo
