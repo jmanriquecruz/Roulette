@@ -45,7 +45,7 @@ namespace RouletteAPI
             #region Swagger
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Game API", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Roulette API", Version = "v1" });
             });
             #endregion
             #region Mapper
@@ -72,7 +72,7 @@ namespace RouletteAPI
                 endpoints.MapControllers();
             });
             app.UseSwagger();
-            app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v1/swagger.json", "Roullete API V1"); });         
+            app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v1/swagger.json", "Roulette API V1"); });         
         }
 
     }
