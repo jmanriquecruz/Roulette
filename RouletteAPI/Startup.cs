@@ -30,7 +30,6 @@ namespace RouletteAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-           
             services.AddControllers();
             #region Redis Dependencies
             services.AddSingleton<ConnectionMultiplexer>(sp =>
@@ -49,15 +48,14 @@ namespace RouletteAPI
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Game API", Version = "v1" });
             });
             #endregion
-
+            #region Mapper
             var mapperConfig = new MapperConfiguration(mc =>
             {
                 mc.AddProfile(new RouletteMapping());
             });
-
             IMapper mapper = mapperConfig.CreateMapper();
             services.AddSingleton(mapper);
-      
+            #endregion
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -67,18 +65,14 @@ namespace RouletteAPI
             {
                 app.UseDeveloperExceptionPage();
             }
-
             app.UseRouting();
-
             app.UseAuthorization();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
             app.UseSwagger();
-            app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v1/swagger.json", "Game API V1"); });
-            
+            app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v1/swagger.json", "Roullete API V1"); });         
         }
 
     }

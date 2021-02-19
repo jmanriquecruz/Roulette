@@ -14,13 +14,13 @@ namespace RouletteAPI.Controllers
 {
     [Route("api/v1/[controller]")]
     [ApiController]
-    public class GameController : Controller
+    public class RouletteController : Controller
     {
         private readonly IRouletteRepository _repository;
-        private readonly ILogger<GameController> _logger;
+        private readonly ILogger<RouletteController> _logger;
         private readonly IMapper _mapper;
 
-        public GameController(IRouletteRepository repository, IMapper mapper, ILogger<GameController> logger)
+        public RouletteController(IRouletteRepository repository, IMapper mapper, ILogger<RouletteController> logger)
         {
             _repository = repository ?? throw new ArgumentNullException(nameof(repository));
             _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
