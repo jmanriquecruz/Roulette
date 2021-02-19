@@ -11,15 +11,15 @@ namespace RouletteAPI.Business
         public string ValidateBet(Bet bet) 
         {
             string error = "";
-            if (bet.Number < 0 && bet.Number > 36)
+            if (bet.Number < 0 || bet.Number > 36)
             {
                 error += "Los numero permitidos son entre 0 y 36 "; 
             }
-            if (bet.MoneyBet < 0 && bet.MoneyBet > 100000)
+            if (bet.MoneyBet <= 0 || bet.MoneyBet > 10000)
             {
                 if (!string.IsNullOrEmpty(error))
                     error += "| ";
-                error += "La apuesta permitida debe ser mayor a 0 y menor a 10.0000";
+                error += "La apuesta permitida debe ser mayor a 0  hasta  10.000";
             }
 
             return error;
