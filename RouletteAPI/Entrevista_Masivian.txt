@@ -1,0 +1,43 @@
+--Harold Estiwar Tovar Perez-- 
+
+--Valeria Almanza
+--Dariana Gutierrez Alvarez-- lider 
+--David Esteban Useche
+--Steven Aroca Linares
+
+
+
+
+
+NSP-2901 VALIDACION DE LIBERACION POR PARTE DE TQC
+VALIDAR JIRA NSP-1705 SACAR EL REPORTE DE NUEVO DE PRODUCCION 
+QRY-260 COLOCAR LOS TIEMPOS SOBRE ESTE JIRA Y LA ENTREGA DE LO QUE SE LE PASO AL CLIENTE 32 HORAS 
+QRY-259 VALIDAR DE NUEVO EL TEMA DE LOS BOTONES Y DEVOLVER A SANDRA
+
+
+Los tiempos de integracion son mitad y mitad 
+     
+
+nsp-1129  
+
+400001716- siniestro 15 honorarios y gastos
+40000054 siniestro 1 y 2
+
+400001837 siniestro 1 y 2
+
+
+nsp-1129
+
+1 1 1 0 0 0
+0 1 0 0 0 0
+1 1 1 0 0 0
+0 0 2 4 4 0
+0 0 0 2 0 0
+0 0 1 2 4 0
+
+
+291420Puedes 
+
+
+
+

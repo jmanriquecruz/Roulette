@@ -47,6 +47,7 @@ namespace RouletteAPI.Repository
         public async Task<bool> BetRoulette( string rouletteId, Bet bet)
         {
             var redisRouletteHash = await _context.Redis.HashGetAsync(HASH_KEY, rouletteId); 
+         
             if (!redisRouletteHash.IsNullOrEmpty)
             {
                 Roulette roulette = new Roulette();

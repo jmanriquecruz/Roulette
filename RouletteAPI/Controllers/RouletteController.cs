@@ -80,10 +80,8 @@ namespace RouletteAPI.Controllers
         [Route("[action]")]
         [HttpPost]
         public async Task<ActionResult> Bet([FromBody] Models.Bet bet)
-        {
-            RouletteBusiness rouletteBusiness = new RouletteBusiness();
-            string error = rouletteBusiness.ValidateBet(bet);
-            if (string.IsNullOrEmpty(error))
+        {    
+            if (ModelState.IsValid)
             {
                 var roulette = await _repository.GetRoulette(bet.RouletteId);
                 if (roulette != null)
@@ -102,9 +100,10 @@ namespace RouletteAPI.Controllers
                 {
                     return BadRequest("Identificador de ruleta no existe");
                 }
+                
             }
-
-            return BadRequest(error);
+           
+            return BadRequest(ModelState);
         }
 
 

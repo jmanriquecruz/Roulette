@@ -1,0 +1,29 @@
+
+https://www.learmoreseekmore.com/2020/11/dotnetcore-api-redis-cache.html?m=1
+1.docker pull redis
+docker run --name your_containerName -p your_PortNumber:6379 -d redis
+docker start your_container_name
+docker exec -it your_docker_container_name redis-cli
+
+
+docker pull redis
+docker run --name redisContainer -p your_PortNumber:6379 -d redis
+docker start redisContainer
+docker exec -it redisContainer redis-cli
+
+https://ticketplate.com/video/en-tu-cuarto-servando-florentino-livestream-concert-2102212000-parked
+
+
+4000
+3000
+
+
+MIERCOLES 10-11
+
+TEAMS 
+
+
+
+
+systemctl restart docker
+"C:\Program Files\Docker\Docker\DockerCli.exe" -SwitchDaemon
